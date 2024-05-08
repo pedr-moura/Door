@@ -1,0 +1,244 @@
+body{
+    font-family: Arial;
+    font-size: 15px;
+    width: 95%;
+    height: 95%;
+    --s: 37px; 
+  
+    --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
+    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+      var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+      var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+}
+/* classe mãe */
+.tela {
+    display: flex;
+    background: #EAEAEA;
+    width: 900px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+    justify-content: space-between;
+}
+/* classes filhas */
+.sideleft{
+    border-right: 1px solid gray;
+    width: 175px;
+    height: 100%;
+}
+.sideright {
+    display: flex;
+    width: 720px;
+    align-items: center;
+    justify-content: space-between;
+}
+/* classes filhas de sideleft */
+.ajustes{
+background-color: #c3c3c3;
+width: 20px;
+padding: 5px;
+border-radius: 10px;
+border: 1px solid white;
+}
+.foto-perfil{
+border-radius: 10px;
+margin-top: 30px;
+width: 150px;
+height: 150px;
+background-color: #c3c3c3;
+border: 1px solid white;
+}
+.foto-perfil img{
+    width: 100%;
+}
+.options{
+margin-top: 50px;
+}
+.options button {
+    border-radius: 7px;
+    width: 150px;
+    height: 30px;
+    background-color: #c3c3c3;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid white;
+}
+.options button:active{
+    background-color: #0061a1;
+    color: white;
+}
+.footer {
+    display: flex;
+    background-color: #ffffff;
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    color: #49b7eb;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    width: 20px;
+}
+/* classes filhas de sideright */
+.box{
+    width: 540px;
+    height: 100%;
+    margin: 0px 20px;
+}
+.nome-da-sessao {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #868686;
+}
+.formularios{
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 100%;
+    height: 420px;
+    margin: 30px 0px;
+    padding: 20px;
+}
+.formularios label{
+    background-color: #0061a1;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 30px;
+    color: white;
+    border-radius: 7px;
+    text-align: top;
+}
+.formularios input{
+    border: 2px solid #0061a1;
+    border-radius: 7px;
+    outline: none;
+    padding: 5px 5px;
+}
+.formularios select{
+    border: 2px solid  #0061a1;
+    border-radius: 7px;
+    width: 150px;
+    outline: none;
+    padding: 5px 5px;
+}
+.form {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-group{
+    margin: 10px;
+}
+.btn-adicionar{
+    border: none;
+    background-color: #1e7ab8;
+    padding: 10px;
+    border-radius: 10px 5px;
+    color: white;
+    border: 2px solid white;
+    width: 150px;
+    margin-bottom: 50px;
+}
+.submit {
+    font-size: 20px;
+    background-color: #0061a1;
+    color: white;
+    position: absolute;
+    right: 223px;
+    bottom: 185px;
+}   
+.funcionalidades {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.funcionalidades button {
+    color: white;
+    border-radius: 7px;
+    width: 150px;
+    height: 25px;
+    background-color: #4390b9;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+.funcionalidades button:active{
+    background-color: #0061a1;
+    color: white;
+}
+button{
+    cursor: pointer;
+}
+.subtela {
+    color: white;
+    position: absolute;
+    z-index: 9;
+    background: rgb(128 128 128 / 88%);
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #474747;
+}
+.subtela button{
+    opacity: 1;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+}
+.subtela p{
+    opacity: 1;
+}
+
+
+
+
+.info {
+    overflow: auto;
+    border-radius: 10px;
+    width: 150px;
+    height: 450px;
+    margin-left: 30px;
+    padding: 5px 20px;
+    border: 1px solid white;
+    position: relative;
+    top: -40px;
+}
